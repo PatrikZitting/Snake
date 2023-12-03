@@ -30,7 +30,7 @@ To play the game, follow these steps:
     git clone https://github.com/PatrikZitting/Snake.git
 
 2. Navigate to the project directory:
-    cd snake
+    cd snake-main
 
 3. Install the project dependencies:
     npm install
