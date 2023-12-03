@@ -13,6 +13,11 @@ let food = { x: 10, y: 10 };
 // Set game running state to false until the user starts the game
 let gameRunning = false;
 
+// Set game scores
+let score = 0;
+let highScore = 0;
+
+
 // Snake movements
 function moveSnake() {
     // Get the current head position
@@ -36,11 +41,37 @@ function checkFoodConsumption() {
         // Extend the snake body
         snake.body.push({ ...snake.body[snake.body.length - 1] });
 
+        // Increase score
+        score++;
+        updateScoreDisplay();
+
+        // Check and update high score
+        if (score > highScore) {
+            highScore = score;
+            updateHighScoreDisplay();
+        }
+
         // Generate a new food position
         food = {
             x: Math.floor(Math.random() * boardSize.width),
             y: Math.floor(Math.random() * boardSize.height),
         };
+    }
+}
+
+// Current Score display update
+function updateScoreDisplay() {
+    const scoreElement = document.getElementById("score");
+    if (scoreElement) {
+        scoreElement.innerText = score.toString();
+    }
+}
+
+// High score display update
+function updateHighScoreDisplay() {
+    const highScoreElement = document.getElementById("high-score");
+    if (highScoreElement) {
+        highScoreElement.innerText = highScore.toString();
     }
 }
 
@@ -161,6 +192,10 @@ document.addEventListener("keydown", (event) => {
 
 // Starting the game
 function StartGame() {
+    // Reset score
+    score = 0;
+    updateScoreDisplay();
+
     // Reset snake position, direction, and body
     snake.body = [{ x: 5, y: 5 }];
     snake.direction = { x: 1, y: 0 };

@@ -8,6 +8,7 @@ A classic timeless Snake game implemented in TypeScript.
 - [Game Features](#game-features)
 - [Getting Started](#getting-started)
 - [Game Controls](#game-controls)
+- [Game Score](#game-score)
 
 ## Introduction
 
@@ -43,3 +44,7 @@ Use the arrow keys to control the snake and enjoy the game!
 ## Game Controls
 Use the arrow keys (Up, Down, Left, Right) to control the snake's direction.
 Press the "Enter" key to start the game.
+
+## Game Score
+Game score is displayed on top of the game (current score and high score).
+NOTE: Scores are stored only in-session, so if you refresh the page, the high score is also reset!

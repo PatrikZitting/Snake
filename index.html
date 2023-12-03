@@ -6,16 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Snake Game</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
-        <h1>Snake Game</h1>
+        <h1>Snake</h1>
+        <div id="score-panel">
+            <div>Score: <span id="score">0</span></div>
+            <div>High Score: <span id="high-score">0</span></div>
+        </div>
         <div id="game-board"></div>
         <div id="game-over-text"></div>
         <div id="instructions">
             <h2>Instructions:</h2>
-            <p>Use Arrow keys to control the snake</p>
             <p>Press Enter to start the game</p>
+            <p>Use Arrow keys to control the snake</p>
             <p>Hitting the wall or eating the snake will end the game</p>
         </div>
     </div>
