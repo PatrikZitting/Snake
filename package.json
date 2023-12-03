@@ -4,7 +4,7 @@
   "description": "Snake game in Typescript",
   "main": "index.js",
   "scripts": {
-    "clean": "rimraf ./dist",
+    "clean": "rimraf ./public/dist",
     "build": "tsc",
     "start": "npm run build && ts-node server.ts",
     "dev": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' server.ts"
