@@ -38,7 +38,10 @@ To play the game, follow these steps:
 4. Start the game:
     npm start
 
-The game will start in your default web browser. Press the "Enter" key to begin playing.
+5. Open in browser:
+    Navigate to http://localhost:3000/
+
+Press the "Enter" key to begin playing.
 Use the arrow keys to control the snake and enjoy the game!
 
 ## Game Controls
