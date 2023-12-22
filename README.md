@@ -5,6 +5,7 @@ A classic timeless Snake game implemented in TypeScript.
 ## Table of Contents
 
 - [Introduction](#introduction)
+- [Screenshots](#screenshots)
 - [Game Features](#game-features)
 - [Getting Started](#getting-started)
 - [Game Controls](#game-controls)
@@ -13,6 +14,11 @@ A classic timeless Snake game implemented in TypeScript.
 ## Introduction
 
 This project is a simple implementation of the classic Snake game using TypeScript. The game features a snake that moves around the game board, eating food to grow longer. The objective is to grow the snake as long as possible without colliding with the walls or itself.
+
+## Screenshots
+
+![Snake1](https://github.com/PatrikZitting/Snake/assets/118559347/2f57a5d4-ad51-4968-b5b9-5eca03a70426)
+![Snake2](https://github.com/PatrikZitting/Snake/assets/118559347/04a33095-5451-4ebd-a5b1-d32371921c44)
 
 ## Game Features
 
